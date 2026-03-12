@@ -1,0 +1,8 @@
+site_name: MELI Corpus
+nav:
+  - Home: 0-index.md
+  - Corpus Design: 1-design.md
+  - Recording Procedures: 2-procedures.md
+  - Transcription: 3-transcription.md
+  - Download MELI: 4-download.md
+theme: readthedocs
