@@ -1,7 +1,7 @@
 site_name: MELI Corpus
 site_url: https://suyuan97.github.io/meli-corpus/
 nav:
-  - Home: 0-index.md
+  - Home: index.md
   - Corpus Design: 1-design.md
   - Recording Procedures: 2-procedures.md
   - Transcription: 3-transcription.md
