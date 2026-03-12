@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://suyuan97.github.io/meli-corpus/3-transcription/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Transcription - MELI Corpus</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Transcription";
+        var mkdocs_page_input_path = "3-transcription.md";
+        var mkdocs_page_url = "/meli-corpus/3-transcription/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> MELI Corpus
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0-index/">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1-design/">Corpus Design</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2-procedures/">Recording Procedures</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Transcription</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-recording-processing-and-automatic-transcription">1+2. Recording processing and automatic transcription:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-orthographic-hand-correction">3. Orthographic hand correction:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#conventions">Conventions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#general-conventions">General conventions:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mandarin-specific-conventions">Mandarin-specific conventions:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#english-specific-conventions">English-specific conventions:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mandarin-word-segmentation">Mandarin word segmentation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-forced-alignment">4. Forced alignment:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-end-product">The end product</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../4-download/">Download MELI</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">MELI Corpus</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Transcription</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="transcription-procedures">Transcription procedures</h1>
+<h2 id="overview">Overview</h2>
+<p>For now, only the partcipant's data is fully transcribed and force-aligned. Transcription and forced-alignment of the interview data started in May 2024 and was completed in October 2024.</p>
+<p>Broadly, the transcription pipeline followed these steps:</p>
+<ol>
+<li>Extraction of participant's channel and file segmentation by language</li>
+<li>Initial transcripts using Whisper text-to-speech model</li>
+<li>Hand-correction of orthographic transcripts by bilingual research assistants</li>
+<li>Phone-level forced alignments</li>
+</ol>
+<p>The tools used in the process were:</p>
+<ul>
+<li><a href="https://www.fon.hum.uva.nl/praat/">Praat</a> (version 6+)</li>
+<li>Python libraries:<ul>
+<li><a href="https://parselmouth.readthedocs.io/"><code>parselmouth</code></a></li>
+<li><a href="https://github.com/rsprouse/audiolabel"><code>audiolabel</code></a></li>
+<li><a href="https://github.com/fxsjy/jieba"><code>jieba</code></a></li>
+<li>...and others</li>
+</ul>
+</li>
+<li><a href="https://huggingface.co/openai/whisper-large-v3">Whisper text-to-speech model</a> (whisper-large-v3)</li>
+<li><a href="https://archive.mpi.nl/tla/elan">ELAN</a> (version 6.7)</li>
+<li><a href="https://montreal-forced-aligner.readthedocs.io/en/latest/">Montreal Forced Aligner</a> VERSION NUMBER</li>
+</ul>
+<h2 id="12-recording-processing-and-automatic-transcription">1+2. Recording processing and automatic transcription:</h2>
+<p>The Whisper model was used to transcribe both English and Mandarin interviews. Whisper is a pre-trained, Transformer-based sequence-to-sequence model trained for either speech recognition or a combination of speech recognition and speech translation. For this corpus, the multilingual <a href="https://huggingface.co/openai/whisper-large-v3"><code>whisper-large-v3</code></a> model was selected, as it was the most current and suitable model for transcribing multilingual data at the time.</p>
+<p>Interview recordings were first segmented by language (Mandarin vs. English) using PRAAT. The Mandarin and English sound files were transcribed separately. Each language-specific segment was extracted as a WAV file containing only the participant's audio channel, which was then processed by the Whisper model. A customized Python script facilitated the transcription process. The relevant code chunk or English transcription is pasted below as an example, including the pipe structure and settings of hyperparameters, which took reference from <a href="https://huggingface.co/openai/whisper-large-v3">the documentation</a> of whisper-large-v3 model. The transcription outputs, including by-utterance timestamps, were saved in CSV format. These output CSV files were converted to TextGrid using <a href="https://archive.mpi.nl/tla/elan">ELAN</a> (version 6.7) for hand correction.</p>
+<pre><code class="language-python">import os
+import csv
+import torch
+from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
+from datasets import load_dataset
+
+#set device to cpu
+device = &quot;cuda:0&quot; if torch.cuda.is_available() else &quot;cpu&quot;
+torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+
+#load model
+model_id = &quot;openai/whisper-large-v3&quot;
+model = AutoModelForSpeechSeq2Seq.from_pretrained(
+    model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
+)
+model.to(device)
+
+#load processor
+processor = AutoProcessor.from_pretrained(model_id)
+
+#load pipe structure
+pipe = pipeline(
+    &quot;automatic-speech-recognition&quot;,
+    model=model,
+    tokenizer=processor.tokenizer,
+    feature_extractor=processor.feature_extractor,
+    max_new_tokens=128,
+    chunk_length_s=30,
+    batch_size=16,
+    return_timestamps=True,
+    torch_dtype=torch_dtype,
+    device=device,
+)
+
+directory = &quot;ENGLISH_INTERVIEW_DIRECTORY&quot;
+transcription_dir = &quot;ENGLISH_TRANSCRIPTION_DIRECTORY&quot;
+
+# loop through English interview directory
+for file in os.listdir(directory):
+    filename = os.fsdecode(file)
+    if filename.endswith(&quot;wav&quot;):
+        print(f&quot;Start transcription for file {filename}.&quot;)
+        result = pipe(os.path.join(directory, filename), generate_kwargs={&quot;language&quot;: &quot;english&quot;}, return_timestamps=True)
+
+        #save transcription by sentence
+        with open(os.path.join(transcription_dir, filename).split(&quot;.&quot;)[0]+&quot;.csv&quot;, &quot;w+&quot;) as f:
+            dict_writer = csv.DictWriter(f, result[&quot;chunks&quot;][0].keys())
+            dict_writer.writeheader()
+            dict_writer.writerows(result[&quot;chunks&quot;])
+
+        print(f&quot;Finished transcription for file {filename}.&quot;)
+        continue
+    else:
+        continue
+</code></pre>
+<h2 id="3-orthographic-hand-correction">3. Orthographic hand correction:</h2>
+<p>Each TextGrid file contains four tiers during hand correction: (1) task (sentence reading vs. interview), (2) automatic transcription by Whisper, (3) corrected transcription and (4) notes. Research assistants revised the Whisper-generated transcriptions in the corrected transcription tier and added notes in the notes tier. Notes included flagged identifying information and content participants requested to be redacted.</p>
+<h3 id="conventions">Conventions</h3>
+<h4 id="general-conventions">General conventions:</h4>
+<ul>
+<li>
+<p><strong>Unintelligible speech</strong> was transcribed as "xxx".</p>
+</li>
+<li>
+<p><strong>Punctuations:</strong></p>
+<ul>
+<li>Questions were marked with "?"</li>
+<li>Possessives were marked with an apostrophe (" ' ")</li>
+<li>Other punctuation was avoided</li>
+</ul>
+</li>
+<li>
+<p><strong>Speech fragments:</strong></p>
+<ul>
+<li>annotated using "&amp;" followed by English orthography or Pinyin (e.g., ""..&amp;con confident...")</li>
+</ul>
+</li>
+<li>
+<p><strong>Code-switches and Style Changes:</strong></p>
+<ul>
+<li>labelled with "@" followed by description (e.g. @e for code-switches to English).</li>
+<li>For all labels click <a href="../cs-table/">here</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Numbers</strong> were spelled out (e.g. "a hundred" for 100).</p>
+</li>
+<li><strong>Other non-speech sounds</strong> were transcribed using the convention below:</li>
+</ul>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Symbol</strong></th>
+<th><strong>Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{interviewer}</td>
+<td>When interviewer is talking</td>
+</tr>
+<tr>
+<td>{laughter}</td>
+<td>Laughter</td>
+</tr>
+<tr>
+<td>{sil}</td>
+<td>Silence</td>
+</tr>
+<tr>
+<td>{cough}</td>
+<td>Coughing</td>
+</tr>
+<tr>
+<td>{chupse}</td>
+<td>Sucking air in between teeth</td>
+</tr>
+<tr>
+<td>{inhale}</td>
+<td>Inhale</td>
+</tr>
+<tr>
+<td>{click}</td>
+<td>Clicking</td>
+</tr>
+<tr>
+<td>{sniff}</td>
+<td>Sniff</td>
+</tr>
+<tr>
+<td>{exhale}</td>
+<td>Exhale</td>
+</tr>
+<tr>
+<td>{chchch}</td>
+<td>Ch-ch-ch (sound for looking for things)</td>
+</tr>
+<tr>
+<td>{micnoise}</td>
+<td>Mic noise</td>
+</tr>
+<tr>
+<td>{swoosh}</td>
+<td>Swoosh sound</td>
+</tr>
+<tr>
+<td>{rhythm}</td>
+<td>Demonstrating rhythm/accent/intonation</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h4 id="mandarin-specific-conventions">Mandarin-specific conventions:</h4>
+<ul>
+<li>The default character for the third-person pronoun was standardized as “她” (tā).</li>
+<li>Sentence-final particles and exclamations were transcribed using one of the following standardized forms that best matched the participant's production.</li>
+</ul>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Pinyin</th>
+<th>Character</th>
+<th>Pinyin</th>
+<th>Character</th>
+<th>Pinyin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>啊</td>
+<td><em>a</em></td>
+<td>吗</td>
+<td><em>ma</em> (question)</td>
+<td>呀</td>
+<td><em>ya</em></td>
+</tr>
+<tr>
+<td>吧</td>
+<td><em>ba</em></td>
+<td>呢</td>
+<td><em>ne</em></td>
+<td>咯</td>
+<td><em>lo</em></td>
+</tr>
+<tr>
+<td>嘛</td>
+<td><em>ma</em> (statement)</td>
+<td>哎</td>
+<td><em>ai</em></td>
+<td>啦</td>
+<td><em>la</em></td>
+</tr>
+<tr>
+<td>嘿</td>
+<td><em>hei</em></td>
+<td>哇</td>
+<td><em>wa</em></td>
+<td>哦</td>
+<td><em>o</em></td>
+</tr>
+<tr>
+<td>哼</td>
+<td><em>heng</em></td>
+<td>滴</td>
+<td><em>di</em></td>
+<td>嘟</td>
+<td><em>du</em></td>
+</tr>
+<tr>
+<td>耶</td>
+<td><em>ye</em></td>
+<td>哈</td>
+<td><em>ha</em></td>
+<td>呐</td>
+<td><em>na</em></td>
+</tr>
+<tr>
+<td>呗</td>
+<td><em>bei</em></td>
+<td>嘞</td>
+<td><em>lei</em></td>
+<td>咦</td>
+<td><em>yi</em></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<ul>
+<li>Common filler words were transcribed using the following forms:  </li>
+</ul>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Pinyin</th>
+<th>Character</th>
+<th>Pinyin</th>
+<th>Character</th>
+<th>Pinyin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>嗯</td>
+<td><em>en</em></td>
+<td>呃</td>
+<td><em>e</em></td>
+<td>嗯哼</td>
+<td><em>en heng</em></td>
+</tr>
+<tr>
+<td>昂</td>
+<td><em>ang</em></td>
+<td>哎哟</td>
+<td><em>ai yo</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<ul>
+<li>Ambiguous syllables were transcribed using <a href="https://en.wikipedia.org/wiki/Pinyin">Pinyin</a>.</li>
+</ul>
+<h4 id="english-specific-conventions">English-specific conventions:</h4>
+<ul>
+<li>Filler words were transcribed using one of the following standardised forms that best matched the pronunciation:<ul>
+<li><em>hm, uhhuh, mmhm, um, uh, mm, huh, ah, em, nn, eh, ih.</em></li>
+</ul>
+</li>
+<li>Capitalization was applied in the following cases:<ul>
+<li>country names (e.g., China).</li>
+<li>brand names (e.g., Apple).</li>
+<li>Languages (e.g., English, Mandarin).</li>
+<li>First-person subject (I).</li>
+<li>Single letters when spelled out (e.g., A-Z).</li>
+<li>Segmented syllables (e.g., A PPLE).</li>
+</ul>
+</li>
+</ul>
+<h3 id="mandarin-word-segmentation">Mandarin word segmentation</h3>
+<p>Following orthographic hand-correction, the Mandarin transcriptions were segmented using the <a href="https://github.com/fxsjy/jieba"><code>jieba</code></a> Python package to mark word boundaries in preparation for forced alignment.</p>
+<h2 id="4-forced-alignment">4. Forced alignment:</h2>
+<p>Forced alignment was generated using <a href="https://montreal-forced-aligner.readthedocs.io/en/latest/changelog/news_3.0.html">Montreal Forced Aligner (MFA) v3.0</a>, based on the hand-corrected transcriptions. This process requires an audio file, an orthographic transcription, an acoustic model, and a pronunciation dictionary. The outputs were phone-level alignments for the interview audio files.</p>
+<p>For English interviews, <a href="https://mfa-models.readthedocs.io/en/latest/acoustic/English/English%20%28US%29%20ARPA%20acoustic%20model%20v3_0_0.html">the English (US) ARPA acoustic model v3.0.0</a> was employed. The dictionary, derived from <a href="https://mfa-models.readthedocs.io/en/latest/dictionary/English/English%20%28US%29%20MFA%20dictionary%20v3_0_0.html">the English (US) ARPA dictionary v3.0.0</a>, was customized by manually transcribing out-of-vocabulary (OOV) lexical items detected during validation. These transcriptions adhered to the ARPA convention and were incorporated into the existing dictionary.</p>
+<p>For Mandarin interviews, <a href="https://mfa-models.readthedocs.io/en/latest/acoustic/Mandarin/Mandarin%20MFA%20acoustic%20model%20v3_0_0.html">the Mandarin MFA acoustic model v3.0.0</a> and <a href="https://mfa-models.readthedocs.io/en/latest/dictionary/Mandarin/Mandarin%20%28China%29%20MFA%20dictionary%20v3_0_0.html">the Mandarin (China) MFA dictionary v3.0.0</a>, which provides pronunciations in IPA, were used. OOV lexical items were identified during validation, transcribed manually using the same IPA conventions, and added to the dictionary.</p>
+<!-- The acoustic models, pronunciation dictionaries, and out-of-vocabulary files for both languages are included with the SpiCE corpus download.-->
+
+<h2 id="the-end-product">The end product</h2>
+<p>The output TextGrid file includes the following tiers as shown in ths screenshots:</p>
+<ul>
+<li><code>task</code>: Marks the current task of the audio (sentence reading vs. interview)</li>
+<li><code>utterance-corrected</code>: Hand-corrected transcription</li>
+<li><code>words</code>: Mandarin or English words</li>
+<li><code>phones</code>: The segments of Mandarin or English as identified by forced alignment</li>
+</ul>
+<p>Speech fragments and unintelligible speech are transcribed as “spn” in the phone tier. Code-switched of English and Mandarin were manually aligned.</p>
+<p><img alt="image" src="../fig_spec_Man.png" /> <img alt="image" src="../fig_spec_Eng.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2-procedures/" class="btn btn-neutral float-left" title="Recording Procedures"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4-download/" class="btn btn-neutral float-right" title="Download MELI">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2-procedures/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4-download/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
