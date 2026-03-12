@@ -1,4 +1,5 @@
 site_name: MELI Corpus
+site_url: https://suyuan97.github.io/meli-corpus/
 nav:
   - Home: 0-index.md
   - Corpus Design: 1-design.md
