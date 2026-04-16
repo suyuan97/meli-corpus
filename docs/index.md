@@ -2,10 +2,9 @@
 
 The **Mandarin–English Language Interview (MELI) Corpus** is an open-access corpus of interviews with 51 Mandarin–English bilinguals. The corpus serves two primary purposes: (1) providing high-quality acoustic data for the analysis of Mandarin–English bilingual speech, and (2) providing interview data for qualitative analysis of language ideologies within the same group of bilinguals. To support these goals, the MELI corpus contains approximately **15 hours of high-quality recordings in each language**. All recordings were captured on separate channels, and the interviewee’s speech has been fully transcribed and force-aligned.
 
-Detailed information about the corpus is available on the [Design](1-design.md), [Procedures](2-procedures.md), [Transcription](3-transcription.md), and [Download](4-download.md) pages.
-
 💐 As you explore the corpus, I hope you’ll take a moment to appreciate the people behind the data: their willingness to share their voices, perspectives, and stories. Please engage with the material with care and curiosity.
 
+Detailed information about the corpus is available on the [Design](1-design.md), [Procedures](2-procedures.md), [Transcription](3-transcription.md), and [Download](4-download.md) pages.
 
 ## Contributors
 
