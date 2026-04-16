@@ -4,6 +4,9 @@ The **Mandarin–English Language Interview (MELI) Corpus** is an open-access co
 
 Detailed information about the corpus is available on the [Design](1-design.md), [Procedures](2-procedures.md), [Transcription](3-transcription.md), and [Download](4-download.md) pages.
 
+💐 As you explore the corpus, I hope you’ll take a moment to appreciate the people behind the data: their willingness to share their voices, perspectives, and stories. Please engage with the material with care and curiosity.
+
+
 ## Contributors
 
 - All MELI people for sharing their perspectives and voices.

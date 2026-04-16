@@ -6,9 +6,7 @@ MELI is available through the UBC Research Data Collection via Scholars Portal D
 
 MELI is freely available under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). That means you can use, copy, share, and adapt it, as long as you don't release your adaptation with additional restrictions, *and* you cite the corpus.
 
-<!-- <div align="center"><button class="button" onclick="https://doi.org/10.5683/SP3/5WMRUO">Download MELI</button></div>
-<br> -->
-<div align="center">
+<!-- <div align="center">
   <a href="https://doi.org/10.5683/SP3/5WMRUO" style="
     background-color: #5b9bd5;
     color: white;
@@ -20,7 +18,57 @@ MELI is freely available under a [Creative Commons Attribution 4.0 International
   ">
     Download MELI
   </a>
+</div> -->
+
+<div style="
+  border: 1.5px solid #5b9bd5;
+  background-color: #f4f8fc;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 650px;
+  margin: 20px auto;
+  text-align: center;
+">
+
+  <p style="margin-top: 0;">
+    💐 As you explore the corpus, I hope you’ll take a moment to appreciate the people behind the data: their willingness to share their voices, perspectives, and stories. Please engage with the material with care and curiosity.
+  </p>
+
+  <label style="display: inline-flex; align-items: center; gap: 8px; margin-top: 10px;">
+    <input type="checkbox" id="ack">
+    I agree to engage with MELI with care and curiosity.
+  </label>
+
+  <br><br>
+
+  <a id="downloadBtn" href="https://doi.org/10.5683/SP3/5WMRUO" style="
+    background-color: #5b9bd5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    pointer-events: none;
+    opacity: 0.5;
+  ">
+    Download MELI
+  </a>
+
 </div>
+
+<script>
+document.getElementById('ack').addEventListener('change', function() {
+  const btn = document.getElementById('downloadBtn');
+  if (this.checked) {
+    btn.style.pointerEvents = 'auto';
+    btn.style.opacity = '1';
+  } else {
+    btn.style.pointerEvents = 'none';
+    btn.style.opacity = '0.5';
+  }
+});
+</script>
 
 ## Citation
 
