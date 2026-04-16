@@ -6,8 +6,21 @@ MELI is available through the UBC Research Data Collection via Scholars Portal D
 
 MELI is freely available under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). That means you can use, copy, share, and adapt it, as long as you don't release your adaptation with additional restrictions, *and* you cite the corpus.
 
-<div align="center"><button class="button" onclick="https://doi.org/10.5683/SP3/5WMRUO">Download MELI</button></div>
-<br>
+<!-- <div align="center"><button class="button" onclick="https://doi.org/10.5683/SP3/5WMRUO">Download MELI</button></div>
+<br> -->
+<div align="center">
+  <a href="https://doi.org/10.5683/SP3/5WMRUO" style="
+    background-color: #5b9bd5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+  ">
+    Download MELI
+  </a>
+</div>
 
 ## Citation
 

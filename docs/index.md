@@ -15,25 +15,25 @@ Detailed information about the corpus is available on the [Design](1-design.md),
 - Sarah W.Y. Ong
 - and members of the [Speech-in-Context Lab](https://speechincontext.arts.ubc.ca/)
 
-<!-- ## Citing the corpus
+## Citing the corpus
 
 When referring to the MELI corpus, it should be spelled out as "the Mandarin English Language Interview Corpus" at least once. It can then be referred to as the "MELI Corpus".
 
 You can cite the corpus directly (preferred):
 
 ```text
-@data{johnson_spice_2021,
-	author = {Johnson, Khia A.},
+@data{liubabel2026meli,
+	author = {Liu, Suyuan and Babel, Molly},
 	publisher = {Scholars Portal Dataverse},
-	title = {SpiCE: Speech in Cantonese and English},
-	year = {2021},
+	title = {MELI: Mandarin-English Language Interview},
+	year = {2026},
 	version = {Version 1},
-	doi = {10.5683/SP2/MJOXP3},
-	url = {https://doi.org/10.5683/SP2/MJOXP3}
-}
+	doi = {10.5683/SP3/5WMRUO},
+	url = {https://doi.org/10.5683/SP3/5WMRUO}
+} 
 ```
 
-Alternatively, cite the paper that introduces the corpus:
+<!-- Alternatively, cite the paper that introduces the corpus:
 
 ```text
 @inproceedings{johnson_lrec_2020,
