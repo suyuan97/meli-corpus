@@ -1,34 +1,34 @@
 # Get the MELI corpus 
 
-<!-- ## Download
+## Download
 
 MELI is available through the UBC Research Data Collection via Scholars Portal Dataverse. You can access MELI from the button below. 
 
 MELI is freely available under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). That means you can use, copy, share, and adapt it, as long as you don't release your adaptation with additional restrictions, *and* you cite the corpus.
 
-<div align="center"><button class="button" onclick="https://doi.org/10.5683/SP2/MJOXP3">Download SpiCE</button></div>
+<div align="center"><button class="button" onclick="https://doi.org/10.5683/SP3/5WMRUO">Download MELI</button></div>
 <br>
 
 ## Citation
 
-As stated on the [home page](index.md), we prefer that you cite the corpus directly:
+We prefer that you cite the corpus directly:
 
 ```text
-@data{johnson_spice_2021,
-	author = {Johnson, Khia A.},
+@data{liubabel2026meli,
+	author = {Liu, Suyuan and Babel, Molly},
 	publisher = {Scholars Portal Dataverse},
-	title = {SpiCE: Speech in Cantonese and English},
-	year = {2021},
+	title = {MELI: Mandarin-English Language Interview},
+	year = {2026},
 	version = {Version 1},
-	doi = {10.5683/SP2/MJOXP3},
-	url = {https://doi.org/10.5683/SP2/MJOXP3}
+	doi = {10.5683/SP3/5WMRUO},
+	url = {https://doi.org/10.5683/SP3/5WMRUO}
 } 
 ```
 
-But if you can't do that, then you can also cite the following paper:
+<!-- But if you can't do that, then you can also cite the following paper: -->
 
-```text
-@inproceedings{johnson_lrec_2020,
+<!-- ```text
+@inproceedings{liubabel2026lrec,
     title = {SpiCE: A new open-access corpus of conversational bilingual speech in Cantonese and English},
     author = {Johnson, Khia A. and Babel, Molly and Fong, Ivan and Yiu, Nancy},
     booktitle = {Proceedings of the 12th Language Resources and Evaluation Conference},
@@ -41,8 +41,19 @@ But if you can't do that, then you can also cite the following paper:
     language = {English},
     ISBN = {979-10-95546-34-4},
 }
-```
--->
+``` -->
+
+<!-- ```text
+@misc{liu2026introducingmelimandarinenglishlanguage,
+      title={Introducing MELI: the Mandarin-English Language Interview Corpus}, 
+      author={Suyuan Liu and Molly Babel},
+      year={2026},
+      eprint={2603.27043},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.27043}, 
+}
+``` -->
 
 ## What's in the download?
 

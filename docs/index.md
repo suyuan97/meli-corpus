@@ -10,9 +10,9 @@ Detailed information about the corpus is available on the [Design](1-design.md),
 - [Suyuan Liu](https://suyuan97.github.io/) &mdash; get in touch at [suyuan97@student.ubc.ca](mailto:suyuan97@student.ubc.ca)
 - [Molly Babel](https://linguistics.ubc.ca/profile/molly-babel/)
 - Angelina Yuan
-- Dlorah Lyne Agama
+- Dlorah Lyne Reyes Agama
 - Jeff Li
-- Sarah Ong
+- Sarah W.Y. Ong
 - and members of the [Speech-in-Context Lab](https://speechincontext.arts.ubc.ca/)
 
 <!-- ## Citing the corpus
